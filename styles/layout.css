@@ -1,0 +1,38 @@
+body {
+  background: var(--shape-background);
+}
+
+#app {
+  display: grid;
+
+  grid-template-columns: 45% 60%;
+  height: 100vh;
+  overflow: hidden;
+  border: 1.25rem solid var(--shape-background);
+}
+
+aside {
+  background: url(../assets/imgs/Background.png) no-repeat center/cover;
+  border-radius: 0.8rem;
+
+  header {
+    display: grid;
+    gap: 8px;
+    margin: 2.125rem;
+
+    & img:first-child {
+      width: 2.865rem;
+      height: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    & img:nth-child(2) {
+      height: 3.375rem;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      color: var(--text-heading);
+      font: var(--body-md);
+    }
+  }
+}
