@@ -17,7 +17,6 @@
   </head>
   <body>
     <div id="app">
-      
       <aside>
         <header>
           <img src="./assets/Logo.svg" alt="icone de festa" />
@@ -25,6 +24,102 @@
           <h1>Crie um convite digital para o seu evento</h1>
         </header>
       </aside>
+
+      <main>
+        <div class="main-container">
+          <h2>Crie seu convite</h2>
+
+          <form action="" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Sobre o evento</legend>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  required
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="startTime">Início</label>
+                  <input
+                    type="datetime-local"
+                    id="startTime"
+                    name="startTime"
+                    required
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="endTime">Fim</label>
+                  <input
+                    type="datetime-local"
+                    id="endTime"
+                    name="endTime"
+                    required
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="person-online">Tipo</label>
+
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        id="person"
+                        name="person"
+                        required
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        id="person-online"
+                        name="online"
+                        required
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="address">Local</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    required
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Descrição</label>
+                <textarea
+                  rows="5"
+                  cols="30"
+                  name="medical-info"
+                  id="medical-info"
+                  placeholder="Escreva sobre os detalhes do evento"
+                >
+                </textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
   </body>
 </html>
