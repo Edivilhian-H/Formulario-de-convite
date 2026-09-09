@@ -37,3 +37,36 @@
 
   --text-sm: 400 0.875rem var(--font-family);
 }
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+main {
+  width: 100%;
+
+  border-radius: 12px;
+  background: var(--Colors-Shape-shape-body, #212427);
+
+  .main-container {
+    margin-top: 5rem;
+
+    h2 {
+      color: var(--text-heading);
+      font: var(--heading-md);
+    }
+  }
+}

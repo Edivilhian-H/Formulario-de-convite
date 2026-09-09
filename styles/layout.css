@@ -11,6 +11,7 @@ body {
   border: 1.25rem solid var(--shape-background);
 }
 
+
 aside {
   background: url(../assets/imgs/Background.png) no-repeat center/cover;
   border-radius: 0.8rem;
