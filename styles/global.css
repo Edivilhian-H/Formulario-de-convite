@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 :root {
@@ -47,21 +48,16 @@
   display: flex;
 }
 
-.flex-1 {
-  flex: 1;
-}
-
-.flex-2 {
-  flex: 2;
+.gap-16{
+  gap: 1rem;
 }
 
 main {
-  width: 100%;
-
   border-radius: 12px;
   background: var(--Colors-Shape-shape-body, #212427);
 
   .main-container {
+    margin-inline: auto;
     margin-top: 5rem;
 
     h2 {

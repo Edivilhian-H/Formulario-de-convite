@@ -1,12 +1,31 @@
 input,
-textarea,
-select {
+textarea {
   border-radius: 8px;
   border: 1px solid var(--input-stroke);
   background: var(--input-base);
 
   padding-block: 0.812rem;
   padding-left: 1rem;
+  width: 100%;
+
+  color: var(--input-placeholder);
+  font: var(--body-md);
+}
+
+.input-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+input[type="text"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="datetime-local"] {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
 }
 
 label {
