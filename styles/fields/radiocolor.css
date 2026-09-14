@@ -1,0 +1,80 @@
+.list-color {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.color-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: var(--shape-button);
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--shape-hover);
+  }
+
+  & input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  & span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+}
+
+.color-option:has(input:checked) {
+  border-color: var(--brand-light);
+  background: var(--shape-button);
+}
+
+.color1 {
+  background: #59b2ff;
+}
+.color2 {
+  background: #6a59ff;
+}
+.color3 {
+  background: #b259ff;
+}
+.color4 {
+  background: #ff59f9;
+}
+.color5 {
+  background: #ff598b;
+}
+.color6 {
+  background: #ff5959;
+}
+.color7 {
+  background: #ff8b59;
+}
+.color8 {
+  background: #ffcd59;
+}
+.color9 {
+  background: #e1ff59;
+}
+.color10 {
+  background: #59ff91;
+}
+.color11 {
+  background: #59fff9;
+}
