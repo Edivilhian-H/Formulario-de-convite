@@ -4,19 +4,40 @@ body {
 
 #app {
   display: grid;
+  max-width: 1248px;
+  margin-inline: auto;
 
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 48.75% 51.25%;
   gap: 1.25rem;
   height: 100vh;
   overflow: hidden;
   border: 1.25rem solid var(--shape-background);
 }
 
+main {
+  overflow: auto;
+
+  border-radius: 12px;
+  background: var(--Colors-Shape-shape-body, #212427);
+
+  & .main-container {
+    max-width: 33rem;
+    margin-left: auto;
+  }
+
+  & h2 {
+    color: var(--text-heading);
+    font: var(--heading-md);
+  }
+}
 
 aside {
   background: url(../assets/imgs/Background.png) no-repeat center/cover;
   border-radius: 0.8rem;
 
+  & .aside-container {
+    max-width: 31rem;
+  }
   header {
     display: grid;
     gap: 8px;
@@ -38,4 +59,3 @@ aside {
     }
   }
 }
-
