@@ -4,7 +4,7 @@ body {
 
 #app {
   display: grid;
-  max-width: 1248px;
+  max-width: 78rem;
   margin-inline: auto;
 
   grid-template-columns: 48.75% 51.25%;
@@ -17,7 +17,7 @@ body {
 main {
   overflow: auto;
 
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: var(--Colors-Shape-shape-body, #212427);
 
   & .main-container {
@@ -41,7 +41,7 @@ aside {
   }
   header {
     display: grid;
-    gap: 8px;
+    gap: 0.5rem;
     margin: 2.125rem;
 
     & img:first-child {
@@ -51,7 +51,7 @@ aside {
     }
     & img:nth-child(2) {
       height: 3.375rem;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     h1 {

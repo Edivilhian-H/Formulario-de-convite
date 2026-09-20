@@ -1,7 +1,7 @@
 input,
 textarea {
-  border-radius: 8px;
-  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--input-stroke);
   background: var(--input-base);
 
   padding-block: 0.812rem;
