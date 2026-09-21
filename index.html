@@ -43,7 +43,6 @@
                   type="text"
                   id="title"
                   name="title"
-                  required
                   placeholder="Nome do evento"
                 />
               </div>
@@ -56,7 +55,6 @@
                       type="datetime-local"
                       id="startTime"
                       name="startTime"
-                      required
                       placeholder=""
                     />
                   </div>
@@ -67,7 +65,6 @@
                     type="datetime-local"
                     id="endTime"
                     name="endTime"
-                    required
                     placeholder=""
                   />
                 </div>
@@ -83,7 +80,6 @@
                         type="radio"
                         id="person"
                         name="person"
-                        required
                         placeholder=""
                       />
                       <svg
@@ -108,7 +104,6 @@
                         type="radio"
                         id="online"
                         name="person"
-                        required
                         placeholder=""
                       />
                       <svg
@@ -137,7 +132,6 @@
                     type="text"
                     id="address"
                     name="address"
-                    required
                     placeholder="Link ou endereço"
                   />
                 </div>
@@ -327,7 +321,7 @@
                 </div>
               </div>
 
-              <div class="wrapper-  flex gap-16">
+              <div class="wrapper- flex gap-16">
                 <div class="input-wrapper">
                   <label for="theme-toggle">Estilo</label>
                   <div class="theme-toggle">
@@ -371,6 +365,75 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="./assets/icons/contact.svg" alt="" />
+                Dados para contato
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+
+                <input type="text" id="name" required placeholder="Nome completo" />
+              </div>
+              <div class="flex gap-16">
+                <div class="input-wrapper">
+                  <label for="email">E-mail</label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="number-phone">Telefone</label>
+
+                  <input
+                    type="number"
+                    id="number-phone"
+                    placeholder="(99) 99999-9999 "
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <footer>
+              <div class="terms">
+                <div class="input-checkbox">
+                  <input
+                    type="checkbox"
+                    name="Terms-Policy"
+                    id="Terms-Policy"
+                  />
+                  <label for="Terms-Policy">
+                    Li e concordo com os <strong>Termos e Condições</strong> e
+                    com a <strong> Política de Privacidade</strong>
+                  </label>
+                </div>
+
+                <div class="input-checkbox">
+                  <input type="checkbox" name="email-promo" id="email-promo" />
+                  <label for="email-promo">
+                    Aceito receber atualizações e promoções por e-mail
+                  </label>
+                </div>
+
+                <div class="input-checkbox">
+                  <input type="checkbox" name="sms-promo" id="sms-promo" />
+                  <label for="sms-promo">
+                    Aceito receber atualizações e promoções por SMS
+                  </label>
+                </div>
+              </div>
+
+              <button>
+                <img src="./assets/icons/ticket.svg" alt="" />
+                Gerar convite
+              </button>
+            </footer>
           </form>
         </div>
       </main>

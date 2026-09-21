@@ -42,6 +42,7 @@
 .container {
   display: grid;
   justify-content: center;
+
 }
 
 .flex {
@@ -51,4 +52,3 @@
 .gap-16 {
   gap: 1rem;
 }
-

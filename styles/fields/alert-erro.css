@@ -1,0 +1,8 @@
+.alert-erro {
+  color: var(--danger);
+  font: var(--body-xs);
+
+  &::before {
+    background: url(../../assets/icons/circle-alert.svg);
+  }
+}

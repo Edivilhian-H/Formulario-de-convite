@@ -1,4 +1,3 @@
-input,
 textarea {
   border-radius: 0.5rem;
   border: 0.0625rem solid var(--input-stroke);
@@ -15,6 +14,20 @@ textarea {
 .input-wrapper {
   flex: 1;
   min-width: 0;
+
+  input,
+  textarea {
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--input-stroke);
+    background: var(--input-base);
+
+    padding-block: 0.812rem;
+    padding-left: 1rem;
+    width: 100%;
+
+    color: var(--input-placeholder);
+    font: var(--body-md);
+  }
 }
 
 input[type="text"] {
@@ -34,4 +47,33 @@ label {
 
   display: block;
   margin-bottom: 0.75rem;
+}
+
+.input-checkbox {
+  display: flex;
+  gap: 0.7rem;
+
+  & input {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 4px;
+    border: 1px solid var(--input-stroke);
+    background: var(--input-base);
+  }
+
+  & label {
+    font: var(--body-sm);
+    font-size: 0.8rem;
+    display: block;
+    align-items: center;
+  }
+
+  & input:checked {
+    background: url(../../assets/icons/check.svg) no-repeat center/cover;
+    border: 1px solid var(--brand-light);
+  }
 }
