@@ -37,6 +37,11 @@ footer {
 
     right: 0;
 
+    &:hover {
+      border-radius: 8px;
+      background: var(--brand-mid);
+    }
+
     & img {
       width: 20px;
       height: 20px;

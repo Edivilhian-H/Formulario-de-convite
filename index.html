@@ -140,12 +140,18 @@
                 <label for="medical-info">Descrição</label>
                 <textarea
                   rows="5"
-                  cols="30"
+                  cols=""
                   name="medical-info"
                   id="medical-info"
                   placeholder="Escreva sobre os detalhes do evento"
+                  required
                 >
                 </textarea>
+
+                <div class="erro">
+                  <img src="./assets/icons/circle-alert.svg" alt="" />
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
             </fieldset>
 
@@ -342,7 +348,7 @@
                   <label for="">Foto de capa</label>
                   <div class="selct-file flex">
                     <div class="btn-filer">
-                      <input type="file" />
+                      <input type="file" required />
                       <svg
                         width="16"
                         height="16"
@@ -374,8 +380,16 @@
 
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-
-                <input type="text" id="name" required placeholder="Nome completo" />
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Nome completo"
+                />
+                <div class="erro">
+                  <img src="./assets/icons/circle-alert.svg" alt="" />
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
               <div class="flex gap-16">
                 <div class="input-wrapper">
