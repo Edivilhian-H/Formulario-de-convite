@@ -1,51 +1,37 @@
 .wrapper-person {
-  & .input-wrapper {
+  & .file-wrapper {
     flex: content;
   }
 }
-.selct-file {
-  width: 100%;
-  position: relative;
-  gap: 0.75rem;
+
+.select-file {
+  margin: 10px;
   align-items: center;
+  gap: 12px;
+  position: relative;
 
-  & .btn-filer {
-    display: flex;
-    height: 2.5rem;
-
-    padding: 0.25rem 0.75rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-
-    border-radius: 0.5rem;
-    background: var(--shape-button);
-    position: relative;
-
-    & svg,
-    path {
-      width: 1rem;
-      height: 1rem;
-    }
-
-    & input {
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      cursor: pointer;
-    }
-
-    & span {
-      color: var(--text-heading);
-      font: var(--body-sm);
-      font-weight: 600;
-    }
+  & input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
   }
 
-  & p {
-    color: var(--input-placeholder);
-    font: var(--body-md);
+  & .select-file-button {
+    min-height: 40px;
+    padding: 4px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--shape-button);
+    color: var(--text-heading);
+    font: var(--body-sm);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  & .file-name {
+    color: var(--text-body);
+    font: var(--body-sm);
   }
 }

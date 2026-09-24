@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-B">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -327,7 +327,7 @@
                 </div>
               </div>
 
-              <div class="wrapper- flex gap-16">
+              <div class="theme-wrapper flex gap-16">
                 <div class="input-wrapper">
                   <label for="theme-toggle">Estilo</label>
                   <div class="theme-toggle">
@@ -344,17 +344,18 @@
                   </div>
                 </div>
 
-                <div class="input-wrapper">
-                  <label for="">Foto de capa</label>
-                  <div class="selct-file flex">
-                    <div class="btn-filer">
-                      <input type="file" required />
+                <div class="file-wrapper">
+                  <label for="cover-image">Foto de capa</label>
+                  <div class="select-file flex">
+                    <input type="file" id="cover-image" />
+                    <label class="select-file-button" for="cover-image">
                       <svg
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
                       >
                         <path
                           fill-rule="evenodd"
@@ -363,10 +364,11 @@
                           fill="#59B2FF"
                         />
                       </svg>
-
                       <span>Selecionar</span>
-                    </div>
-                    <p>Nenhum arquivo selecionado</p>
+                    </label>
+                    <span class="file-name" aria-live="polite">
+                      Nenhum arquivo selecionado
+                    </span>
                   </div>
                 </div>
               </div>

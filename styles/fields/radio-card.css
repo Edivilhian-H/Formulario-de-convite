@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -13,7 +14,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    width: 8.375rem;
+    padding-inline: .25rem;
     padding-block: 0.25rem 0.5rem;
 
     text-align: center;
@@ -38,7 +39,7 @@
 
     &:hover,
     &:focus-within {
-      border: 0.0625rem solid var(--input-stroke);
+      outline: 0.0625rem solid var(--input-stroke);
       background: var(--shape-hover);
     }
 

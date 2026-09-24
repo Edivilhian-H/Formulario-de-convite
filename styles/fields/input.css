@@ -13,7 +13,13 @@ textarea {
   &:focus {
     border: 1px solid var(--brand-light);
   }
-  
+  transition: 0.3s;
+
+  &:hover,
+  &:focus-within {
+    background: var(--shape-hover);
+    transition: 0.2s;
+  }
 }
 
 .input-wrapper {
@@ -32,6 +38,13 @@ textarea {
 
     color: var(--input-placeholder);
     font: var(--body-md);
+    transition: 0.3s;
+
+    &:hover,
+    &:focus-within {
+      background: var(--shape-hover);
+      transition: 0.2s;
+    }
   }
 }
 
@@ -82,7 +95,8 @@ label {
   }
 }
 
-input , textarea {
+input,
+textarea {
   &:invalid {
     border: 0.125rem solid var(--danger);
   }
@@ -92,7 +106,6 @@ input , textarea {
     align-items: center;
     text-align: center;
     gap: 0.5rem;
-    order: 1px solid var(--danger);
 
     font: var(--body-sm);
     color: var(--danger);
